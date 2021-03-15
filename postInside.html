@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV Community 🧑‍💻👩‍💻</title>
+
+    <!--Favicon-->
+    <link  rel="icon"   href="assets/images/favicon.ico" type="image/png" />
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+
+<!-- Lalo-->
+<!-- Silvi-->
+<!--Mario-->
+
+<body>
+
+    <!--header-->
+    <header>
+        <nav  class="d-flex w-100" >
+            <div class= " lefthead w-100 d-flex a-items-center"> 
+                <i class="fas fa-bars ml-20"></i>
+                <img src="assets/icons/devIcon.svg" alt="" id="logo-nav-img" style="height: 50px;" class="ml-20 mr-20">
+                <input style="width: 300px;" class="d-none" id="search-bar" type="text" placeholder="Search..">
+            </div>
+            <div class=" righthead w-50 d-flex a-items-center jc-flex-end" id="profile-img">
+                <button class="m-sides-10 d-none" id="search-button">Write a post</button>
+                <i class="fas fa-search mr-20" id="search-icon"></i>
+                <img src="assets/icons/notifications.svg" class="mr-20" alt="">
+                <i class="far fa-bell mr-20"></i>
+                <img id="user-nav-img" class="b-radius-100 mr-20" src="assets/images/usuarioLogNav.webp" alt="" style="height: 40px; ">
+                
+                
+            </div>
+        </nav>  
+    </header>
+    <!--END Header-->
+
+    <!--Main-->
+    <main class=" main d-flex">
+
+            
+        <!--Aside Left-->
+        <aside class="l-aside-post">
+            <div class="l-aside-prim-post ">
+                <div class="heart">
+                    <img src="assets/icons/heart.svg">
+                    <span>11</span>
+                </div>
+                <div class="icon">
+                    <img src="assets/icons/unicorn.svg">
+                    <span> 3</span>
+                </div>
+                <div class="saved">
+                    <img src="assets/icons/saved.svg">
+                    <span>24</span>
+                </div>
+                <div class="ellipsis">
+                    <i class="fas fa-ellipsis-h"></i>  
+                </div>                      
+            </div>
+        </aside>
+
+        <section class="d-flex w-100 f-dir-column">
+            <!--Post titles-->
+            <nav  class="d-flex w-100" style="background-color:#EEF0F1">
+                <div class= " d-flex a-items-center m-sides-10">
+                    <h3>Posts</h3>
+                </div> 
+                <div class=" listbox w-100 d-flex a-items-center jc-flex-end m-sides-10">
+                    <!--Segunda navbar-->
+                    <div id="second-navbar" class="d-none">
+                        <button >Feed</button>
+                        <button >Week</button>
+                        <button >Month</button>
+                        <button >Year</button>
+                        <button >Infinity</button>
+                        
+                    </div>
+                    
+                    
+                    <select class="select-button" name="Feed">
+                        <option value="A">
+                            Feed
+                        </option>
+                        <option value="B">
+                            Week
+                        </option>
+                        <option value="C">
+                            Month
+                        </option>
+                        <option value="D">
+                            Year
+                        </option>
+                        <option value="E">
+                            Infinity
+                        </option>
+                        <option value="F">
+                            Latest
+                        </option>
+                    </select>
+                </div>            
+            </nav>
+            <!--Cards-->
+
+            <div class="main-card d-flex w-100 f-dir-column">
+                <div class="head-img"></div>
+                <div class="main-text">
+                    <div class="card-post">
+                        <!--User post that comment-->
+                        <div class="user-card-post d-flex">
+                            
+                            <div class="d-flex mt-10">
+                                
+                                <img class="post-img m-10" src="assets/images/avatarPost.jpg" alt="">
+                            </div>
+                            <div class="d-flex a-items-center">
+                                <p>
+                                    Brandon Roberts                                    <br>
+                                    <span class="time-text">Mar 5 (2 days ago)</span><br>
+                                    <span class="post-title">Nevertheless, Jacque Coded, Even When She Wanted to Quit</span>
+                                    <br>
+                                    <span class="time-text">#Javascript  #Technology  #Business</span>
+                                    <br>
+                                </p>
+                            
+    
+                            </div>
+                        </div>
+
+                        <div class="d-flex jc-space-b ml-40">
+                            <div class="d-flex a-items-center">
+                            <i class="far fa-heart m-10"></i>
+                                    <span>76 <span class="reactions">reactions</span> </span>
+                                <i class="far fa-comment m-10"></i>
+                                    <span>39 <span class="reactions">comments</span> </span>
+                            </div>
+                            <div class="d-flex a-items-center">
+                                <span class="time-text">3 min read </span>
+                                <button class="save-button m-10">Save</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-comment d-flex">
+                        <div>
+                            
+                            <img class="post-img m-10" src="assets/images/avatarPost.jpg" alt="">
+                        </div>
+                        <div>
+                            <p>Ibrahim Cesar <span class="time-text">2 days ago</span></span> 
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi suscipit totam pariatur aliquam perferendis quasi corporis doloribus dolor dignissimos esse excepturi porro earum enim id eius reprehenderit doloremque, fugit ratione beatae veritatis unde iusto saepe? Doloribus, quia accusantium? In molestias tempora, autem eum dignissimos quisquam facere libero aperiam adipisci omnis?
+                                <br>
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt eum illum doloribus laudantium voluptatum officiis explicabo dolorem non. Officia consequuntur ut totam numquam optio sequi! Aperiam quaerat repellendus non nostrum modi possimus officia autem illum adipisci mollitia, totam cumque velit beatae asperiores maxime similique corporis, fugiat expedita dolorum fuga, praesentium obcaecati earum. Et ut illo ab velit quae quam labore earum explicabo quisquam similique!
+                                <br><br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat in porro laborum molestiae quos autem reiciendis, recusandae excepturi, itaque enim, praesentium cupiditate nihil aliquid ab cum illo repudiandae repellendus harum. Excepturi cumque nostrum eius, doloremque mollitia eaque consequuntur ut ipsam sint, ipsa, libero illo officia distinctio asperiores possimus eos nobis laboriosam quod hic quam. Atque dicta vitae placeat consequatur possimus, dolore voluptates id error ad omnis repellendus molestiae laudantium animi dignissimos cupiditate et accusamus nobis excepturi? Tempore laboriosam eius ea voluptatum autem explicabo! Ipsum nemo qui aliquam debitis ipsam incidunt quod culpa, alias optio placeat.
+                                <br><br>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum aperiam harum consectetur minus corporis nam aliquam atque natus at libero dolorem in laboriosam est aut quam doloribus iste nesciunt perferendis, alias facilis explicabo ad similique rerum eveniet. Soluta, placeat suscipit obcaecati iusto culpa harum inventore illum nemo exercitationem maiores nesciunt, nam laborum quia a laudantium delectus voluptates voluptatum fugiat non. Sed recusandae earum repudiandae, itaque hic nam fuga culpa sit, tempora aliquid inventore tenetur alias, id reprehenderit voluptatem commodi dolor blanditiis quaerat animi vel? Earum perspiciatis impedit reprehenderit, magnam molestiae asperiores voluptatem quasi vero nisi repellat facilis labore maxime tempore blanditiis id officiis harum adipisci at unde repudiandae sunt placeat ratione minus omnis! At blanditiis voluptatibus ducimus repellat fuga eum odit natus! Doloremque, libero quaerat.
+                                <br><br>
+                                <span class="time-text">See all 39 comments</span>
+                            </p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!--Normal posts-->
+            <div class="main-card d-flex w-100 f-dir-column mt-10">
+                <div class="main-text">
+                    <div class="card-post">
+                        <!--User post that comment-->
+                        <div class="user-card-post d-flex">
+                            
+                            <div class="d-flex mt-10">
+                                
+                                <img class="post-img m-10" src="assets/images/avatarPost.jpg" alt="">
+                            </div>
+                            <div class="d-flex a-items-center">
+                                <p>
+                                    Brandon Roberts                                    <br>
+                                    <span class=" time-text">Mar 5 (2 days ago)</span><br>
+                                    <span class="post-title">Lorem ipsum dolor sit.</span>
+                                    <br>
+                                    <span class="time-text">#Javascript  #Technology  #Business</span>
+                                    <br>
+                                </p>
+                            
+    
+                            </div>
+                        </div>
+
+                        <div class="d-flex jc-space-b ml-40">
+                            <div class="d-flex a-items-center" >
+                                <i class="far fa-heart m-10"></i>
+                                    <span>76 <span class="reactions">reactions</span> </span>
+                                <i class="far fa-comment m-10"></i>
+                                    <span>39 <span class="reactions">comments</span> </span>
+                            </div>
+                            <div class="d-flex a-items-center">
+                                <span class="time-text">3 min read </span>
+                                <button class="save-button m-10">Save</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+
+
+        </section>
+
+    </a>
+
+        <!--rightAside-->
+        <aside id="right-aside">
+            <div class="right-cards d-flex">
+                <header class="d-flex f-dir-column padding-0 inside-header"> <!--Creo el header-->
+                    <div class="black-header"></div>
+                    <section class="d-flex ">
+                        <a href=""class="avatarR">
+                            <span> 
+                                <img src="assets/images/profile-pic.webp" alt="">
+                            </span>
+                        </a>
+                        <h3><b>Uma</b></h3>
+                    </section>
+                    <p>Software engineer. Passionate, enthusiastic, self-driven individual seeking new opportunities to grow as a Web Developer.</p>
+                </header>
+                <button class="button-inside ">Follow</button>
+                <span>
+                    <label>WORK</label>
+                    <p>Software Engineer</p>
+                </span>
+                <span>
+                    <label>LOCATION</label>
+                    <p>Greater Boston, MA</p>
+                </span>
+                <span>
+                    <label>EDUCATION</label>
+                    <p>Immersive Software Engineering</p>
+                </span>
+                <span>
+                    <label>JOINED</label>
+                    <p>13 de nov. de 2020</p>
+                </span>
+            </div>
+            
+            <div class="right-cards d-flex trending">
+                <header>
+                    <h3><b>Trending on <span>DEV Community</span> </b></h3>
+                </header>
+                <div>
+                    <img src="assets/images/profile-pic.webp" alt="">
+
+                    <p>Go Update Your Github... NOW!!</p>
+                    <span>
+                        #beginners #github #codenewbie
+                    </span>
+                            
+                        
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!--END Main-->
+
+    <!--Footer-->
+    <footer>
+        <div id="first-div" >
+            <a href="">Home</a>
+            <a href="">Reading List</a>
+            <a href="">Listings</a>
+            <a href="">Podcasts</a>
+            <a href="">Videos</a>
+            <a href="">Tags</a>
+            <a href="">Code of Conduct</a>
+            <a href="">FAQ</a>
+        </div>
+        <div>
+            <a href="">DEV Shop</a>
+            <a href="">Sponsors</a>
+            <a href="">About</a>
+            <a href="">Privacy policy</a>
+            <a href="">Terms of use</a>
+            <a href="">Contact</a>
+            <a href="">Write a post</a>
+        </div>
+        <div class="social-media">
+            <img src="assets/icons/twitter.svg" alt="">
+            <img src="assets/icons/facebook.svg" alt="">
+            <img src="assets/icons/github.svg" alt="">
+            <img src="assets/icons/instagram.svg" alt="">
+            <img src="assets/icons/twitch.svg" alt="">
+        </div>
+        <div>
+            <p><b>DEV Community</b> – A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+        </div>
+        <div>
+            <p>Built on <b>Forem</b> — the <b>open source</b> software that powers <b>DEV</b> and other inclusive communities.</p>
+        </div>
+        <div><p>Made with love and <b>Ruby on Rails</b>. DEV Community © 2016 - 2021.</p></div>
+        <div>
+            <img src="assets/images/hojita.svg" alt="">
+        </div>
+        <img class="perezoso" src="assets/images/footerPerezoso.png" alt="">
+    </footer>
+
+
+</body>
+</html>

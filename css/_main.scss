@@ -1,0 +1,169 @@
+/*Card Principal*/
+#main-anchor{
+    text-decoration: none;
+    color: black;
+}
+
+.main-card{
+    // max-width: 500px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    background: white;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+    .head-img{
+        width: auto;
+        background-image: url(https://picsum.photos/800/300);
+        padding: 21%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .main-text{
+        .card-comment{
+            background-color: #F7F7F7;
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            
+            
+        }
+        
+        .card-post{
+            .user-card-post{
+                div{
+                    i{
+                        font-size: 1.7rem;
+                        padding: 10px;
+                    }
+                }
+            }
+            .card-title{
+                p, h3{
+                    margin-top: -5px;
+                }
+                p{
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}
+
+
+.post-title{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    cursor: pointer;
+    &:hover{
+        
+        color: $highlight-color;
+        
+    }
+}
+
+.post-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.time-text{
+    font-size: 0.8rem;
+    opacity: 0.5;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+}
+.post-icon{
+    font-size: 0.9px;
+    
+}
+
+.save-button{
+    height: 35px;
+    width: 55px;
+    border: none;
+    border-radius: 10%;
+    font-size: 0.9rem;
+    background-color: $saveBtn-inactive-gray;
+    color: $inactive-gray;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    &:hover{
+        background-color: $saveBtn-active-gray;
+        transition-duration: 0.2s;
+    }
+    
+}
+
+.reactions{
+    display: none;
+}
+
+.select-button{
+    width: 80px;
+    height: 40px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    padding: 5px;
+}
+
+
+/*Tablet version*/
+
+
+@media screen and (min-width: 768px){
+    main{
+        margin-right: 8px;
+    }
+    .main-card{
+        .head-img{
+            padding: 0%;
+            height: 300px;
+            
+        }
+        
+        .reactions{
+            display: inline;
+        }
+    }
+    #second-navbar{
+        display: block;
+        color: $inactive-gray-light;
+        button{
+            &:first-child{
+                border-bottom: solid 3px $highlight-active;
+                &:hover{
+                    border-bottom: solid 3px $highlight-active;
+                }
+            }
+            margin: 0px 3px;
+            border: none;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px 5px 0px 0px;
+            font-size: 1rem;
+            transition-duration: 0.5s;
+            &:hover{
+                color: black;
+                background-color: #E1D3FF;
+                cursor: pointer;
+                transition-duration: 0.5s;
+                color: $highlight-active;
+            }
+        }
+        
+    }
+    .select-button{
+        display: none;
+    }
+}
+
+/*END Tablet version*/
